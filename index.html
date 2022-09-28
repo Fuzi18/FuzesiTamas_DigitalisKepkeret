@@ -10,11 +10,17 @@
 
 <body>
     A kép URL-je:<input name="url" id="url">
-    A kép szélessége (pixelben megadva):<input name="szelesseg" type="number" id="szelesseg">
-    A képkeret vastagsága<input name="vastagsag" type="number" id="szin">
-    A képkeret színe:<input name="szin" type="color" id="szin">
+    A kép szélessége (pixelben megadva):<input name="szelesseg" type="number" data-target="kep" id="szelesseg">
+    A képkeret vastagsága<input name="vastagsag" type="number" data-target="kep" id="szin">
+    A képkeret színe:<input name="szin" type="color" data-target="kep" id="szin">
     <p></p>
     <img id="kep">
+
+    <footer>
+        <p>Füzesi Tamás</p>
+        <p>2/14T</p>
+        <button class="dark-mode" id="gomb" onclick="klikk()">Gomb</button>
+    </footer>
         
     <script src='main.js'></script>
 </body>
